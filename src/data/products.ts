@@ -7,13 +7,15 @@ export type Product = {
   description: string;
 };
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const products: Product[] = [
   {
     id: 1,
     name: "Nike Air Max 270",
     category: "Running",
     price: 899.9,
-    image: "/products/nike-air-max-270.jpg",
+    image: `${basePath}/products/nike-air-max-270.jpg`,
     description:
       "Conforto e amortecimento para o dia inteiro, com visual esportivo moderno e tecnologia Air.",
   },
@@ -22,7 +24,7 @@ export const products: Product[] = [
     name: "Adidas Ultraboost",
     category: "Running",
     price: 999.9,
-    image: "/products/adidas-ultraboost.jpg",
+    image: `${basePath}/products/adidas-ultraboost.jpg`,
     description:
       "Tênis de alta performance com excelente retorno de energia e conforto para corrida.",
   },
@@ -31,7 +33,7 @@ export const products: Product[] = [
     name: "Puma Suede Classic",
     category: "Casual",
     price: 549.9,
-    image: "/products/puma-suede-classic.jpg",
+    image: `${basePath}/products/puma-suede-classic.jpg`,
     description:
       "Um clássico urbano da Puma com design atemporal e construção confortável em suede.",
   },
@@ -40,7 +42,7 @@ export const products: Product[] = [
     name: "New Balance 574",
     category: "Casual",
     price: 699.9,
-    image: "/products/new-balance-574.jpg",
+    image: `${basePath}/products/new-balance-574.jpg`,
     description:
       "Visual retrô, conforto e versatilidade em um dos modelos mais icônicos da New Balance.",
   },
@@ -49,7 +51,7 @@ export const products: Product[] = [
     name: "Nike Air Force 1",
     category: "Casual",
     price: 799.9,
-    image: "/products/nike-air-force-1.jpg",
+    image: `${basePath}/products/nike-air-force-1.jpg`,
     description:
       "Clássico absoluto da Nike com design clean, amortecimento e estilo para qualquer ocasião.",
   },
@@ -58,7 +60,7 @@ export const products: Product[] = [
     name: "Adidas Forum Low",
     category: "Basket",
     price: 749.9,
-    image: "/products/adidas-forum-low.jpg",
+    image: `${basePath}/products/adidas-forum-low.jpg`,
     description:
       "Inspirado nas quadras de basquete, combina estilo retrô, estabilidade e presença marcante.",
   },
